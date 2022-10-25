@@ -2,19 +2,39 @@
   display: grid;
   /* Style rows and columns */
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  height: auto;
+  width: auto;
 }
 
 #title {
-  grid-column: 100px repeat(auto-fit, minmax(100, 1fr)) 100px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 
 }
 
 .friend {
-  grid-column: 1 / span 2;
-  grid-row: 2 / 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 /* Style other types of family members below*/
 .siblings{
-  grid-column:
+  grid-column-start: 1;
+  grid-column-end: 3;
+
 }
+.AuntsUncles{
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+.Grandparents{
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
